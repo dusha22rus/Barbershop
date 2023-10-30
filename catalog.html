@@ -34,7 +34,115 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="inner">
+      <header class="inner-header">
+        <h1>Каталог</h1>
+        <ul class="hleb-ul">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a>Каталог</a>
+          </li>
+        </ul>
+      </header>
+
+      <section class="filters">
+        <h2 class="visually-hidden">Список фильтров</h2>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+
+          <fieldset>
+            <legend>Цена</legend>
+            <button type="button">
+              <span class="visually-hidden">изменить минимальную цену</span>
+            </button>
+            <label>от<input type="number">₽</label> 
+            <button type="button">
+              <span class="visually-hidden">изменить максимальную цену</span>
+            </button>            
+            <label>до<input type="number">₽</label>            
+          </fieldset>
+
+          <fieldset>       
+            <legend>Производители</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="Bed Head for Men">
+                  <span></span>
+                  <span>Bed Head for Men</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="Homme Deep Cleansing Cool" checked>
+                  <span></span>
+                  <span>Homme Deep Cleansing Cool</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="So Intense" checked>
+                  <span></span>
+                  <span>So Intense</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="Sprekenhus">
+                  <span></span>
+                  <span>Sprekenhus</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="Firm Storе">
+                  <span></span>
+                  <span>Firm Storе</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="Winter Body" checked>
+                  <span></span>
+                  <span>Winter Body</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Группы товаров</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="product-group">
+                  <span></span>
+                  <span>Бритвенные принадлежности</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="product-group">
+                  <span></span>
+                  <span>Средства для ухода</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="product-group">
+                  <span></span>
+                  <span>Аксессуары</span>
+                </label>
+              </li>
+            </ul>
+          
+          </fieldset>
+          
+
+        </form>
+
+      </section>
       <!-- Основное содержимое страницы -->
     </main>
     <footer class="page-footer">
@@ -51,7 +159,7 @@
           <h2 class="footer-h2">Получайте лучшие предложения</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <p class="footer-p">
-              <label for="footer-label">
+              <label for="email">
                 Ваше имя
               </label>
               <input type="email" placeholder="email@htmlacademy.ru" id="email" name="email" required>
