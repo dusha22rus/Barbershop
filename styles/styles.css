@@ -2,7 +2,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     line-height: 24px;
-    background-color: #FBF7F4;
+    background-color: black;
     color: #242424;
 }
 .page-header {
@@ -23,5 +23,6 @@ body {
 
 .main-index {
     background-color: aliceblue;
-    background-image: url("images/index-img/bg.jpg");
+    background: url("../images/index-img/bg.jpg") no-repeat;
+    color: white;
 }    
