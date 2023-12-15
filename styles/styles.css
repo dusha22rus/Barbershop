@@ -2,7 +2,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     line-height: 24px;
-    background-color: black;
+    background-color: #FBF7F4;
     color: #242424;
 }
 .page-header {
@@ -16,13 +16,63 @@ body {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
 }
 .visually-hidden {
     /*display: none;*/
 }
 
-.main-index {
-    background-color: aliceblue;
-    background: url("../images/index-img/bg.jpg") no-repeat;
+.main-index {    
+    background: url("../images/index-img/bg.jpg") no-repeat black;
+    background-position: 100% auto;
     color: white;
-}    
+}
+
+.foto,
+.contact,
+.zapis {
+    color: #242424;
+}
+
+.bkd-ul {
+    text-align: center;
+}
+
+.middle-section {
+    background: url("../images/index-img/pattern.png") #FBF7F4;
+    color: #242424;
+}
+
+.bkd-p {
+    line-height: 24px;    
+}
+
+.popular-h {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 35px;
+}
+
+.servic-span, 
+.servic-price {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.servic-price {
+    color: #AF7842;
+}
+
+.button {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    padding: 14px 20px;
+    line-height: 16px;
+}
