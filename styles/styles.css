@@ -38,16 +38,25 @@ body {
     text-align: center;
 }
 
-.middle-section {
+.middle-section,
+.div-2 {
     background: url("../images/index-img/pattern.png") #FBF7F4;
     color: #242424;
+}
+
+.bkd-h {
+    color: #FFF;   
 }
 
 .bkd-p {
     line-height: 24px;    
 }
 
-.popular-h {
+.popular-h,
+.foto-h,
+.bkd-h,
+.contact-h2,
+.zapis-h {
     font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
@@ -76,3 +85,99 @@ body {
     padding: 14px 20px;
     line-height: 16px;
 }
+
+.krug-button,
+.button-one {
+    width: 8px; 
+    height: 8px;
+    background: #BDBDBD;
+    border-radius: 50%;    
+}
+.button-one {    
+    background: #242424;    
+}
+
+.div-2 {
+    color:#242424;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;    
+}
+
+.contact-h3 {
+    color:#AF7842;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.address {
+    text-decoration: none;
+    color:#242424;
+    font-style: normal;
+}
+
+.telephone {
+    color: #242424;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    font-size: 24px;
+    line-height: 28px;
+    font-style: normal;
+}
+
+.zapis {
+    text-transform: uppercase;
+}
+.zapis-p {
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.page-footer {
+    background: url("../images/index-img/footer-bg.png") #242424;
+    color: #FFF;
+}
+.footer-adress {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;  
+}
+.footer-telephone {
+    color: white;
+    font-size: 20px;
+}
+.footer-location {    
+    color: #FFF;
+    font-size: 20px;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+}
+
+.footer-h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;    
+}
+.create {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;    
+}
+
+.footer-link {
+    color: #DBB590;
+}
+
+/*Catalog*/
+
