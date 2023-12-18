@@ -180,4 +180,70 @@ body {
 }
 
 /*Catalog*/
+.catalog-body {
+    font-style: normal;
+    color: #242424;
+    font-weight: 700;  
+    font-size: 16px;
+    line-height: 22px;
+}
 
+.hleb-a {
+    font-weight: 400;
+    line-height: 22px;
+    color: #242424;    
+}
+
+.hleb2 {
+    font-weight: 400;
+    line-height: 22px;
+    color: #595959;     
+}
+
+.zagolovok {
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.title-h1 {
+    font-size: 32px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.filters-content {
+    
+}
+
+.view-2 {
+    background-color: #242424;
+    padding: 14px 20px;;
+}
+
+.produtc-h3 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000;
+}
+
+.price {
+    color: #814B18;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.button-market {     
+    padding: 14px 20px;
+    line-height: 52px; 
+}
+
+.button-market-activ{
+color: black;
+background-color: white;
+}
