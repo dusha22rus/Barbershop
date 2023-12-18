@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body class="catalog-body">
     <header class="page-header">
         <nav class="navigation">
             <a class="header-logo" href="index.html">                
@@ -27,26 +27,32 @@
             </ul>
             <ul class="navigation-list">
                 <li class="navigation-item">
-                    <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+                    <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span>
+                    <img src="../perezagruz/images/index-img/search.svg" alt="поиск" width="16" height="16">
+                    </a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="#"><span class="visually-hidden">Корзина</span></a>
+                    <a class="navigation-link" href="#"><span class="visually-hidden">Корзина</span>
+                      <img src="../perezagruz/images/catalog-img/buster.svg" alt="корзина" width="16" height="16">
+                    </a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="#">Вход</a>
+                    <a class="navigation-link" href="#"><span class="visually-hidden">Личный кабинет</span>
+                      <img src="../perezagruz/images/catalog-img/person.svg" alt="Личный кабинет" width="14" height="16">
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="inner">
       <header class="inner-header">
-        <h1>Каталог</h1>
+        <h1 class="title-h1">Каталог</h1>
         <ul class="hleb-ul">
           <li>
-            <a href="index.html">Главная</a>
+            <a class="hleb-a" href="index.html">Главная</a>
           </li>
           <li>
-            <a>Каталог</a>
+            <a class="hleb2">Каталог</a>
           </li>
         </ul>
       </header>
@@ -56,7 +62,7 @@
         <form action="https://echo.htmlacademy.ru/" method="get">
 
           <fieldset>
-            <legend>Цена</legend>
+            <legend class="zagolovok">Цена</legend>
             <button type="button">
               <span class="visually-hidden">изменить минимальную цену</span>
             </button>
@@ -68,9 +74,9 @@
           </fieldset>
 
           <fieldset>       
-            <legend>Производители</legend>
+            <legend class="zagolovok">Производители</legend>
             <ul>
-              <li>
+              <li class="filters-content">
                 <label>
                   <input type="checkbox" name="Bed Head for Men">
                   <span></span>
@@ -116,7 +122,7 @@
           </fieldset>
 
           <fieldset>
-            <legend>Группы товаров</legend>
+            <legend class="zagolovok">Группы товаров</legend>
             <ul>
               <li>
                 <label>
@@ -141,7 +147,7 @@
               </li>
             </ul>          
           </fieldset>
-          <button type="submit">Показать</button>         
+          <button class="button" type="submit">Показать</button>         
         </form>
       </section>
 
@@ -152,17 +158,19 @@
           <option>Сначало дешевое</option>
         </select>
       </form>
-      <a href="#">
+      <a href="#">        
+        <img src="../perezagruz/images/catalog-img/view-1.svg" alt="отобразить списком" width="16" height="16">
         <span class="visually-hidden">отобразить списком</span>
       </a>
       <a href="#">
+        <img src="../perezagruz/images/catalog-img/view-2.svg" alt="отобразить плиткой" class="view-2">
         <span class="visually-hidden">отобразить плиткой</span>
       </a>
       <div class="vse-tovari">
         <ul>
           <li class="product-li">
             <a href="product.html">
-              <img alt="Шампунь для мужчин Brews Daily" src="">
+              <img alt="Шампунь для мужчин Brews Daily" src="../perezagruz/images/catalog-img/product-1.jpg" width="180" height="168">
               <h3 class="produtc-h3">Шампунь для мужчин Brews Daily</h3>
             </a>
             <b class="price">744 ₽</b>
@@ -171,7 +179,7 @@
 
           <li class="product-li">
             <a href="product.html">
-              <img alt="Syoss шампунь Men Power & Strength" src="">
+              <img alt="Syoss шампунь Men Power & Strength" src="../perezagruz/images/catalog-img/product-2.jpg" width="180" height="168">
               <h3 class="produtc-h3">Syoss шампунь Men Power & Strength</h3>
             </a>
             <b class="price">160 ₽</b>
@@ -180,7 +188,7 @@
 
           <li class="product-li">
             <a href="product.html">
-              <img alt="Schauma шампунь для мужчин «Сила и объём с хмелем»" src="">
+              <img alt="Schauma шампунь для мужчин «Сила и объём с хмелем»" src="../perezagruz/images/catalog-img/product-3.jpg" width="180" height="168">
               <h3 class="produtc-h3">Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
             </a>
             <b class="price">94 ₽</b>
@@ -189,7 +197,7 @@
 
           <li class="product-li">
             <a href="product.html">
-              <img alt="Nivea Men шампунь-уход  «Экстремальная свежесть с ментолом»" src="">
+              <img alt="Nivea Men шампунь-уход  «Экстремальная свежесть с ментолом»" src="../perezagruz/images/catalog-img/product-4.jpg" width="180" height="168">
               <h3 class="produtc-h3">Nivea Men шампунь-уход  «Экстремальная свежесть с ментолом»</h3>
             </a>
             <b class="price">173 ₽</b>
@@ -198,7 +206,7 @@
 
           <li class="product-li">
             <a href="product.html">
-              <img alt="Шампунь Amplifier Thickening" src="">
+              <img alt="Шампунь Amplifier Thickening" src="../perezagruz/images/catalog-img/product-5.jpg" width="180" height="168">
               <h3 class="produtc-h3">Шампунь Amplifier Thickening</h3>
             </a>
             <b class="price">441 ₽</b>
@@ -207,7 +215,7 @@
 
           <li class="product-li">
             <a href="product.html">
-              <img alt="American Crew шампунь Anti-Dandruff" src="">
+              <img alt="American Crew шампунь Anti-Dandruff" src="../perezagruz/images/catalog-img/product-6.jpg" width="180" height="168">
               <h3 class="produtc-h3">American Crew шампунь Anti-Dandruff</h3>
             </a>
             <b class="price">904 ₽</b>
@@ -224,7 +232,7 @@
             </a>
           </li>
           <li class="stranitsi-li">
-            <a class="button-activnaia" href="#">1</a>
+            <a class="button button-market-activ" href="#">1</a>
           </li>
           <li class="stranitsi-li">
             <a class="button button-market" href="#">2</a>
@@ -244,43 +252,51 @@
             </a>
           </li>
         </ul>
-        <button class="button button-market" type="button">Показать  ещё</button>
+        <button class="button" type="button">Показать  ещё</button>
       </section>    
     </main>
     <footer class="page-footer">
-        <section>
-          <h2 class="visually-hidden">Контакты</h2>
-          <img class="footer-img" src="" alt="Логотип Барбершопа Бородинский">
-          <address>
-          <p class="contact-p"><a href="https://yandex.ru/maps/-/CDaSVN7t">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a></p>
-          <a href="tel:8913552365">+7-913-555-23-65</a>
-          </address>
-          <p class="contact-p"><a href="https://yandex.ru/maps/-/CDaSVN7t">Как нас найти?</a></p>
-        </section>
-        <section>
-          <h2 class="footer-h2">Получайте лучшие предложения</h2>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <p class="footer-p">
-              <label for="email">
-                Ваше имя
-              </label>
-              <input type="email" placeholder="email@htmlacademy.ru" id="email" name="email" required>
-            </p>
-            <button class="footer-button" type="submit">
-              <span class="visually-hidden">Отправить</span>
-            </button>
-          </form>        
-        </section>
-        <section>
-          <h2 class="footer-h2">Давайте дружить</h2>
-          <ul>
-            <li><a href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">twitter</span></a></li>
-              
-            <li><a href="https://vk.com/htmlacademy"><span class="visually-hidden">vk.com</span></a></li>
-            <li><a href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">facebook</span></a></li>
-          </ul>
-          <p><a href="https://htmlacademy.ru/">.html academy</a></p>        
-        </section>      
-      </footer>
+      <section class="footer-section">
+        <h2 class="visually-hidden">Контакты</h2>
+        <img class="footer-img" src="images/index-img/footer-logo.png" alt="Логотип Барбершопа Бородинский">
+        <address>
+        <p class="contact-p"><a class="footer-adress" href="https://yandex.ru/maps/-/CDaSVN7t">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a></p>
+        <a class="telephone footer-telephone" href="tel:8913552365">+7-913-555-23-65</a>
+        </address>
+        <p class="contact-p"><a class="location footer-location" href="https://yandex.ru/maps/-/CDaSVN7t">Как нас найти?</a></p>
+      </section>
+      <section>
+        <h2 class="footer-h2">Получайте лучшие предложения</h2>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <p class="footer-p">
+            <label for="email">
+              Ваше имя
+            </label>
+            <input type="email" placeholder="email@htmlacademy.ru" id="email" name="email" required>
+          </p>
+          <button class="footer-button" type="submit">
+            <span class="visually-hidden">Отправить</span>
+          </button>
+        </form>        
+      </section>
+      <section>
+        <h2 class="footer-h2">Давайте дружить</h2>
+        <ul>
+          <li><a href="https://twitter.com/htmlacademy_ru">
+            <img src="images/index-img/twitter.svg" alt="twitter" width="56" height="44">
+            <span class="visually-hidden">twitter</span>            
+          </a></li>            
+          <li><a href="https://vk.com/htmlacademy">
+            <img src="images/index-img/vk.svg" alt="Вконтакте" width="56" height="44">
+            <span class="visually-hidden">vk.com</span>
+          </a></li>
+          <li><a href="https://www.facebook.com/htmlacademy">
+            <img src="images/index-img/inst.svg" alt="instagram" width="56" height="44">
+            <span class="visually-hidden">instagram</span>
+          </a></li>
+        </ul>
+        <p class="create">Сделано в <a class="footer-link" href="https://htmlacademy.ru/">.html academy</a></p>        
+      </section>      
+    </footer>    
   </body>
 </html>
