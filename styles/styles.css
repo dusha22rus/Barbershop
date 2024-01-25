@@ -18,9 +18,9 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
-.visually-hidden {
-    /*display: none;*/
-}
+/*.visually-hidden {
+    
+}*/
 
 .main-index {    
     background: url("../images/index-img/bg.jpg") no-repeat black;
@@ -247,3 +247,38 @@ body {
 color: black;
 background-color: white;
 }
+
+html {
+    height: 100%;
+    outline: 5px solid green;
+    outline-offset: -7px;
+    
+}
+
+body {
+    margin: 0;
+    display: flex; 
+    flex-direction: column;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.navigation {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    margin: 0 auto;
+    padding: 0;
+    width: 430px;    
+}
+.navigation-list-2 {
+    width: 210px;
+    margin-left: auto;
+}
+
+1:02:18
