@@ -5,298 +5,349 @@
     <title>Каталог Barbershop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="catalog-body">
     <header class="page-header">
-        <nav class="navigation">
-            <a class="header-logo" href="index.html">                
-                <img class="header-img" src="images/catalog-img/header-logo.png" alt="логотип сайта Бородинский">
+      <nav class="navigation">
+        <a class="header-logo" href="index.html">
+          <img class="header-img" src="images/catalog-img/header-logo.png"
+            alt="логотип сайта Бородинский">
+        </a>
+        <ul class="navigation-list-3">
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://htmlacademy.ru/about">О
+              нас</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current"
+              href="catalog.html">Каталог</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Частые вопросы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list-4">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span
+                class="visually-hidden">Поиск</span>
+              <img src="../perezagruz/images/index-img/search.svg" alt="поиск"
+                width="16" height="16">
             </a>
-            <ul class="navigation-list">
-                <li class="navigation-item">
-                    <a class="navigation-link" href="https://htmlacademy.ru/about">О нас</a>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">Частые вопросы</a>
-                </li>
-            </ul>
-            <ul class="navigation-list">
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span>
-                    <img src="../perezagruz/images/index-img/search.svg" alt="поиск" width="16" height="16">
-                    </a>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#"><span class="visually-hidden">Корзина</span>
-                      <img src="../perezagruz/images/catalog-img/buster.svg" alt="корзина" width="16" height="16">
-                    </a>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#"><span class="visually-hidden">Личный кабинет</span>
-                      <img src="../perezagruz/images/catalog-img/person.svg" alt="Личный кабинет" width="14" height="16">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span
+                class="visually-hidden">Корзина</span>
+              <img src="../perezagruz/images/catalog-img/buster.svg"
+                alt="корзина" width="16" height="16">
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span
+                class="visually-hidden">Личный кабинет</span>
+              <img src="../perezagruz/images/catalog-img/person.svg"
+                alt="Личный кабинет" width="14" height="16">
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="inner">
-      <header class="inner-header">
-        <h1 class="title-h1">Каталог</h1>
-        <ul class="hleb-ul">
-          <li>
-            <a class="hleb-a" href="index.html">Главная</a>
-          </li>
-          <li>
-            <a class="hleb2">Каталог</a>
-          </li>
-        </ul>
-      </header>
+      <div class="page-container-catalog">
+        <header class="inner-header">
+          <h1 class="title-h1">Каталог</h1>
+          <ul class="hleb-ul">
+            <li>
+              <a class="hleb-a" href="index.html">Главная</a>
+            </li>
+            <li>
+              <a class="hleb2">Каталог</a>
+            </li>
+          </ul>
+        </header>
+        <div class="catalog-products">
+          <section class="filters">
+            <h2 class="visually-hidden" hidden>Список фильтров</h2>
+            <form action="https://echo.htmlacademy.ru/" method="get">
 
-      <section class="filters">
-        <h2 class="visually-hidden">Список фильтров</h2>
-        <form action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset>
+                <legend class="zagolovok">Цена</legend>
+                <button type="button">
+                  <span class="visually-hidden">изменить минимальную цену</span>
+                </button>
+                <label>от<input type="number">₽</label>
+                <button type="button">
+                  <span class="visually-hidden">изменить максимальную
+                    цену</span>
+                </button>
+                <label>до<input type="number">₽</label>
+              </fieldset>
 
-          <fieldset>
-            <legend class="zagolovok">Цена</legend>
-            <button type="button">
-              <span class="visually-hidden">изменить минимальную цену</span>
-            </button>
-            <label>от<input type="number">₽</label> 
-            <button type="button">
-              <span class="visually-hidden">изменить максимальную цену</span>
-            </button>            
-            <label>до<input type="number">₽</label>            
-          </fieldset>
+              <fieldset>
+                <legend class="zagolovok">Производители</legend>
+                <ul>
+                  <li class="filters-content">
+                    <label>
+                      <input type="checkbox" name="Bed Head for Men">
+                      <span></span>
+                      <span>Bed Head for Men</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="Homme Deep Cleansing Cool"
+                        checked>
+                      <span></span>
+                      <span>Homme Deep Cleansing Cool</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="So Intense" checked>
+                      <span></span>
+                      <span>So Intense</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="Sprekenhus">
+                      <span></span>
+                      <span>Sprekenhus</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="Firm Storе">
+                      <span></span>
+                      <span>Firm Storе</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="Winter Body" checked>
+                      <span></span>
+                      <span>Winter Body</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
-          <fieldset>       
-            <legend class="zagolovok">Производители</legend>
+              <fieldset>
+                <legend class="zagolovok">Группы товаров</legend>
+                <ul>
+                  <li>
+                    <label>
+                      <input type="radio" name="product-group"
+                        value="Бритвенные принадлежности">
+                      <span></span>
+                      <span>Бритвенные принадлежности</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="product-group"
+                        value="Средства для ухода">
+                      <span></span>
+                      <span>Средства для ухода</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="product-group"
+                        value="Аксессуары">
+                      <span></span>
+                      <span>Аксессуары</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="button" type="submit">Показать</button>
+            </form>
+          </section>
+
+          <form>
+            <select>
+              <option>Сначала дорогие</option>
+              <option>Сначало популярное</option>
+              <option>Сначало дешевое</option>
+            </select>
+          </form>
+          <a href="#">
+            <img src="../perezagruz/images/catalog-img/view-1.svg"
+              alt="отобразить списком" width="16" height="16">
+            <span class="visually-hidden">отобразить списком</span>
+          </a>
+          <a href="#">
+            <img src="../perezagruz/images/catalog-img/view-2.svg"
+              alt="отобразить плиткой" class="view-2">
+            <span class="visually-hidden">отобразить плиткой</span>
+          </a>
+          <div class="vse-tovari">
             <ul>
-              <li class="filters-content">
-                <label>
-                  <input type="checkbox" name="Bed Head for Men">
-                  <span></span>
-                  <span>Bed Head for Men</span>
-                </label>
+              <li class="product-li">
+                <a href="product.html">
+                  <img alt="Шампунь для мужчин Brews Daily"
+                    src="../perezagruz/images/catalog-img/product-1.jpg"
+                    width="180" height="168">
+                  <h3 class="produtc-h3">Шампунь для мужчин Brews Daily</h3>
+                </a>
+                <b class="price">744 ₽</b>
+                <a href="#" class="button">Купить</a>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="Homme Deep Cleansing Cool" checked>
-                  <span></span>
-                  <span>Homme Deep Cleansing Cool</span>
-                </label>
+
+              <li class="product-li">
+                <a href="product.html">
+                  <img alt="Syoss шампунь Men Power & Strength"
+                    src="../perezagruz/images/catalog-img/product-2.jpg"
+                    width="180" height="168">
+                  <h3 class="produtc-h3">Syoss шампунь Men Power & Strength</h3>
+                </a>
+                <b class="price">160 ₽</b>
+                <a href="#" class="button">Купить</a>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="So Intense" checked>
-                  <span></span>
-                  <span>So Intense</span>
-                </label>
+
+              <li class="product-li">
+                <a href="product.html">
+                  <img alt="Schauma шампунь для мужчин «Сила и объём с хмелем»"
+                    src="../perezagruz/images/catalog-img/product-3.jpg"
+                    width="180" height="168">
+                  <h3 class="produtc-h3">Schauma шампунь для мужчин «Сила и
+                    объём с хмелем»</h3>
+                </a>
+                <b class="price">94 ₽</b>
+                <a href="#" class="button">Купить</a>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="Sprekenhus">
-                  <span></span>
-                  <span>Sprekenhus</span>
-                </label>
+
+              <li class="product-li">
+                <a href="product.html">
+                  <img
+                    alt="Nivea Men шампунь-уход  «Экстремальная свежесть с ментолом»"
+                    src="../perezagruz/images/catalog-img/product-4.jpg"
+                    width="180" height="168">
+                  <h3 class="produtc-h3">Nivea Men шампунь-уход «Экстремальная
+                    свежесть с ментолом»</h3>
+                </a>
+                <b class="price">173 ₽</b>
+                <a href="#" class="button">Купить</a>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="Firm Storе">
-                  <span></span>
-                  <span>Firm Storе</span>
-                </label>
+              <li class="product-li">
+                <a href="product.html">
+                  <img alt="Шампунь Amplifier Thickening"
+                    src="../perezagruz/images/catalog-img/product-5.jpg"
+                    width="180" height="168">
+                  <h3 class="produtc-h3">Шампунь Amplifier Thickening</h3>
+                </a>
+                <b class="price">441 ₽</b>
+                <a href="#" class="button">Купить</a>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="Winter Body" checked>
-                  <span></span>
-                  <span>Winter Body</span>
-                </label>
+
+              <li class="product-li">
+                <a href="product.html">
+                  <img alt="American Crew шампунь Anti-Dandruff"
+                    src="../perezagruz/images/catalog-img/product-6.jpg"
+                    width="180" height="168">
+                  <h3 class="produtc-h3">American Crew шампунь
+                    Anti-Dandruff</h3>
+                </a>
+                <b class="price">904 ₽</b>
+                <a href="#" class="button">Купить</a>
+              </li>
+
+            </ul>
+          </div>
+          <section>
+            <ul class="stranitsi-ul">
+              <li class="button str-left">
+                <a class="disable">
+                  <span class="visually-hidden">предыдущая страница</span>
+                </a>
+              </li>
+              <li class="stranitsi-li">
+                <a class="button button-market-activ" href="#">1</a>
+              </li>
+              <li class="stranitsi-li">
+                <a class="button button-market" href="#">2</a>
+              </li>
+              <li class="stranitsi-li">
+                <a class="button button-market" href="#">3</a>
+              </li>
+              <li class="stranitsi-li">
+                <a class="button button-market" href="#">4</a>
+              </li>
+              <li class="stranitsi-li">
+                <a class="button button-market" href="#">5</a>
+              </li>
+              <li class="stranitsi-li" href="#">
+                <a class="button button-market" href="#">
+                  <span class="visually-hidden">следующая страница</span>
+                </a>
               </li>
             </ul>
-          </fieldset>
-
-          <fieldset>
-            <legend class="zagolovok">Группы товаров</legend>
+            <button class="button" type="button">Показать ещё</button>
+          </section>
+        </div>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer-container">
+          <section class="footer-section">
+            <h2 class="visually-hidden">Контакты</h2>
+            <img class="footer-img" src="images/index-img/footer-logo.png"
+              alt="Логотип Барбершопа Бородинский">
+            <address>
+              <p class="contact-p"><a class="footer-adress"
+                  href="https://yandex.ru/maps/-/CDaSVN7t">Санкт-Петербург,
+                  набережная реки Карповки, 5, литера П.</a></p>
+              <a class="telephone footer-telephone"
+                href="tel:8913552365">+7-913-555-23-65</a>
+            </address>
+            <p class="contact-p"><a class="location footer-location"
+                href="https://yandex.ru/maps/-/CDaSVN7t">Как нас найти?</a></p>
+          </section>
+          <section>
+            <h2 class="footer-h2">Получайте лучшие предложения</h2>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <p class="footer-p">
+                <label for="email">Ваше имя</label>
+                <input type="email" placeholder="email@htmlacademy.ru"
+                  id="email" name="email" required>
+              </p>
+              <button class="footer-button" type="submit">
+                <span class="visually-hidden">Отправить</span>
+              </button>
+            </form>
+          </section>
+          <section>
+            <h2 class="footer-h2">Давайте дружить</h2>
             <ul>
               <li>
-                <label>
-                  <input type="radio" name="product-group" value="Бритвенные принадлежности">
-                  <span></span>
-                  <span>Бритвенные принадлежности</span>
-                </label>
+                <a href="https://twitter.com/htmlacademy_ru">
+                  <img src="images/index-img/twitter.svg" alt="twitter"
+                    width="56" height="44">
+                  <span class="visually-hidden">twitter</span>
+                </a>
               </li>
               <li>
-                <label>
-                  <input type="radio" name="product-group" value="Средства для ухода">
-                  <span></span>
-                  <span>Средства для ухода</span>
-                </label>
+                <a href="https://vk.com/htmlacademy">
+                  <img src="images/index-img/vk.svg" alt="Вконтакте" width="56"
+                    height="44">
+                  <span class="visually-hidden">vk.com</span>
+                </a>
               </li>
               <li>
-                <label>
-                  <input type="radio" name="product-group" value="Аксессуары">
-                  <span></span>
-                  <span>Аксессуары</span>
-                </label>
+                <a href="https://www.facebook.com/htmlacademy">
+                  <img src="images/index-img/inst.svg" alt="instagram"
+                    width="56" height="44">
+                  <span class="visually-hidden">instagram</span>
+                </a>
               </li>
-            </ul>          
-          </fieldset>
-          <button class="button" type="submit">Показать</button>         
-        </form>
-      </section>
-
-      <form>
-        <select>
-          <option>Сначала дорогие</option>
-          <option>Сначало популярное</option>
-          <option>Сначало дешевое</option>
-        </select>
-      </form>
-      <a href="#">        
-        <img src="../perezagruz/images/catalog-img/view-1.svg" alt="отобразить списком" width="16" height="16">
-        <span class="visually-hidden">отобразить списком</span>
-      </a>
-      <a href="#">
-        <img src="../perezagruz/images/catalog-img/view-2.svg" alt="отобразить плиткой" class="view-2">
-        <span class="visually-hidden">отобразить плиткой</span>
-      </a>
-      <div class="vse-tovari">
-        <ul>
-          <li class="product-li">
-            <a href="product.html">
-              <img alt="Шампунь для мужчин Brews Daily" src="../perezagruz/images/catalog-img/product-1.jpg" width="180" height="168">
-              <h3 class="produtc-h3">Шампунь для мужчин Brews Daily</h3>
-            </a>
-            <b class="price">744 ₽</b>
-            <a href="#" class="button">Купить</a>
-          </li>
-
-          <li class="product-li">
-            <a href="product.html">
-              <img alt="Syoss шампунь Men Power & Strength" src="../perezagruz/images/catalog-img/product-2.jpg" width="180" height="168">
-              <h3 class="produtc-h3">Syoss шампунь Men Power & Strength</h3>
-            </a>
-            <b class="price">160 ₽</b>
-            <a href="#" class="button">Купить</a>
-          </li>
-
-          <li class="product-li">
-            <a href="product.html">
-              <img alt="Schauma шампунь для мужчин «Сила и объём с хмелем»" src="../perezagruz/images/catalog-img/product-3.jpg" width="180" height="168">
-              <h3 class="produtc-h3">Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
-            </a>
-            <b class="price">94 ₽</b>
-            <a href="#" class="button">Купить</a>
-          </li>
-
-          <li class="product-li">
-            <a href="product.html">
-              <img alt="Nivea Men шампунь-уход  «Экстремальная свежесть с ментолом»" src="../perezagruz/images/catalog-img/product-4.jpg" width="180" height="168">
-              <h3 class="produtc-h3">Nivea Men шампунь-уход  «Экстремальная свежесть с ментолом»</h3>
-            </a>
-            <b class="price">173 ₽</b>
-            <a href="#" class="button">Купить</a>
-          </li>
-
-          <li class="product-li">
-            <a href="product.html">
-              <img alt="Шампунь Amplifier Thickening" src="../perezagruz/images/catalog-img/product-5.jpg" width="180" height="168">
-              <h3 class="produtc-h3">Шампунь Amplifier Thickening</h3>
-            </a>
-            <b class="price">441 ₽</b>
-            <a href="#" class="button">Купить</a>
-          </li>
-
-          <li class="product-li">
-            <a href="product.html">
-              <img alt="American Crew шампунь Anti-Dandruff" src="../perezagruz/images/catalog-img/product-6.jpg" width="180" height="168">
-              <h3 class="produtc-h3">American Crew шампунь Anti-Dandruff</h3>
-            </a>
-            <b class="price">904 ₽</b>
-            <a href="#" class="button">Купить</a>
-          </li>
-
-        </ul>   
-      </div>
-      <section>
-        <ul class="stranitsi-ul">
-          <li class="button str-left">
-            <a class="disable">
-              <span class="visually-hidden">предыдущая страница</span>
-            </a>
-          </li>
-          <li class="stranitsi-li">
-            <a class="button button-market-activ" href="#">1</a>
-          </li>
-          <li class="stranitsi-li">
-            <a class="button button-market" href="#">2</a>
-          </li>
-          <li class="stranitsi-li">
-            <a class="button button-market" href="#">3</a>
-          </li>
-          <li class="stranitsi-li">
-            <a class="button button-market" href="#">4</a>
-          </li>
-          <li class="stranitsi-li">
-            <a class="button button-market" href="#">5</a>
-          </li>
-          <li class="stranitsi-li" href="#">
-            <a class="button button-market" href="#">
-              <span class="visually-hidden">следующая страница</span>
-            </a>
-          </li>
-        </ul>
-        <button class="button" type="button">Показать  ещё</button>
-      </section>    
-    </main>
-    <footer class="page-footer">
-      <section class="footer-section">
-        <h2 class="visually-hidden">Контакты</h2>
-        <img class="footer-img" src="images/index-img/footer-logo.png" alt="Логотип Барбершопа Бородинский">
-        <address>
-        <p class="contact-p"><a class="footer-adress" href="https://yandex.ru/maps/-/CDaSVN7t">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a></p>
-        <a class="telephone footer-telephone" href="tel:8913552365">+7-913-555-23-65</a>
-        </address>
-        <p class="contact-p"><a class="location footer-location" href="https://yandex.ru/maps/-/CDaSVN7t">Как нас найти?</a></p>
-      </section>
-      <section>
-        <h2 class="footer-h2">Получайте лучшие предложения</h2>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <p class="footer-p">
-            <label for="email">
-              Ваше имя
-            </label>
-            <input type="email" placeholder="email@htmlacademy.ru" id="email" name="email" required>
-          </p>
-          <button class="footer-button" type="submit">
-            <span class="visually-hidden">Отправить</span>
-          </button>
-        </form>        
-      </section>
-      <section>
-        <h2 class="footer-h2">Давайте дружить</h2>
-        <ul>
-          <li><a href="https://twitter.com/htmlacademy_ru">
-            <img src="images/index-img/twitter.svg" alt="twitter" width="56" height="44">
-            <span class="visually-hidden">twitter</span>            
-          </a></li>            
-          <li><a href="https://vk.com/htmlacademy">
-            <img src="images/index-img/vk.svg" alt="Вконтакте" width="56" height="44">
-            <span class="visually-hidden">vk.com</span>
-          </a></li>
-          <li><a href="https://www.facebook.com/htmlacademy">
-            <img src="images/index-img/inst.svg" alt="instagram" width="56" height="44">
-            <span class="visually-hidden">instagram</span>
-          </a></li>
-        </ul>
-        <p class="create">Сделано в <a class="footer-link" href="https://htmlacademy.ru/">.html academy</a></p>        
-      </section>      
-    </footer>    
-  </body>
-</html>
+            </ul>
+            <p class="create">Сделано в <a class="footer-link"
+                href="https://htmlacademy.ru/">.html academy</a></p>
+          </section>
+        </div>
+      </footer>
+    </body>
+  </html>
