@@ -5,9 +5,10 @@ body {
     background-color: #FBF7F4;
     color: #242424;
 }
+
 .page-header {
     background-color: black;
-    color: white;    
+    color: white;
     font-weight: 700;
     line-height: 22px;
 }
@@ -18,38 +19,40 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
-/*.visually-hidden {
-    
-}*/
 
-.main-index {    
+.visually-hidden {
+    color: aqua;
+    display: none;
+}
+
+.main-index {
     background: url("../images/index-img/bg.jpg") no-repeat black;
-    background-position: 100% auto;
+    background-position: center 0;
     color: white;
 }
 
-.foto,
+.pfoto-gallery,
 .contact,
-.zapis {
+.record {
     color: #242424;
 }
 
-.bkd-ul {
+.advantages-list {
     text-align: center;
 }
 
 .middle-section,
-.div-2 {
+.registration {
     background: url("../images/index-img/pattern.png") #FBF7F4;
     color: #242424;
 }
 
 .bkd-h {
-    color: #FFF;   
+    color: #FFF;
 }
 
 .bkd-p {
-    line-height: 24px;    
+    line-height: 24px;
 }
 
 .popular-h,
@@ -63,7 +66,7 @@ body {
     line-height: 35px;
 }
 
-.servic-span, 
+.servic-span,
 .servic-price {
     font-size: 20px;
     font-style: normal;
@@ -71,6 +74,7 @@ body {
     line-height: 28px;
     text-transform: uppercase;
 }
+
 .servic-price {
     color: #AF7842;
 }
@@ -82,30 +86,31 @@ body {
     background-color: black;
     color: white;
     font-weight: 700;
-    padding: 14px 20px;
     line-height: 16px;
+    width: 130px;
 }
 
 .krug-button,
 .button-one {
-    width: 8px; 
+    width: 8px;
     height: 8px;
     background: #BDBDBD;
-    border-radius: 50%;    
-}
-.button-one {    
-    background: #242424;    
+    border-radius: 50%;
 }
 
-.div-2 {
-    color:#242424;
+.button-one {
+    background: #242424;
+}
+
+.registration {
+    color: #242424;
     font-size: 16px;
     font-weight: 700;
-    line-height: 24px;    
+    line-height: 24px;
 }
 
 .contact-h3 {
-    color:#AF7842;
+    color: #AF7842;
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
@@ -114,7 +119,7 @@ body {
 
 .address {
     text-decoration: none;
-    color:#242424;
+    color: #242424;
     font-style: normal;
 }
 
@@ -127,9 +132,10 @@ body {
     font-style: normal;
 }
 
-.zapis {
+.record {
     text-transform: uppercase;
 }
+
 .zapis-p {
     color: #595959;
     font-size: 14px;
@@ -141,19 +147,22 @@ body {
     background: url("../images/index-img/footer-bg.png") #242424;
     color: #FFF;
 }
+
 .footer-adress {
     color: white;
     text-decoration: none;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px;  
+    line-height: 20px;
 }
+
 .footer-telephone {
     color: white;
     font-size: 20px;
 }
-.footer-location {    
+
+.footer-location {
     color: #FFF;
     font-size: 20px;
     line-height: normal;
@@ -166,13 +175,14 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
+
 .create {
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px;    
+    line-height: 20px;
 }
 
 .footer-link {
@@ -183,7 +193,7 @@ body {
 .catalog-body {
     font-style: normal;
     color: #242424;
-    font-weight: 700;  
+    font-weight: 700;
     font-size: 16px;
     line-height: 22px;
 }
@@ -191,13 +201,13 @@ body {
 .hleb-a {
     font-weight: 400;
     line-height: 22px;
-    color: #242424;    
+    color: #242424;
 }
 
 .hleb2 {
     font-weight: 400;
     line-height: 22px;
-    color: #595959;     
+    color: #595959;
 }
 
 .zagolovok {
@@ -213,13 +223,14 @@ body {
     text-transform: uppercase;
 }
 
-.filters-content {
+/*.filters-content {
     
-}
+}*/
 
 .view-2 {
     background-color: #242424;
-    padding: 14px 20px;;
+    padding: 14px 20px;
+    ;
 }
 
 .produtc-h3 {
@@ -238,32 +249,27 @@ body {
     text-transform: uppercase;
 }
 
-.button-market {     
+.button-market {
     padding: 14px 20px;
-    line-height: 52px; 
+    line-height: 52px;
 }
 
-.button-market-activ{
-color: black;
-background-color: white;
+.button-market-activ {
+    color: black;
+    background-color: white;
 }
 
 html {
     height: 100%;
-    outline: 5px solid green;
-    outline-offset: -7px;
-    
 }
 
 body {
     margin: 0;
-    display: flex; 
+    display: flex;
     flex-direction: column;
 }
 
-.main-container {
-    flex-grow: 1;
-}
+
 
 .navigation {
     display: flex;
@@ -271,14 +277,162 @@ body {
     margin: 0 auto;
 }
 
-.navigation-list {
-    margin: 0 auto;
+.navigation-list-1 {
     padding: 0;
-    width: 430px;    
+    margin: 0;
+    width: 430px;
 }
+
 .navigation-list-2 {
-    width: 210px;
+    width: 250px;
+    padding: 0;
+    margin: 0;
     margin-left: auto;
 }
 
-1:02:18
+.main-container {
+    flex-grow: 1;
+}
+
+.page-container-index {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.main-logo-1 {
+    margin: 0 auto;
+    display: block;
+}
+
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages-item {
+    width: 277px;
+}
+
+.middle-section {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+}
+
+.pfoto-gallery {
+    width: 390px;
+}
+
+.registration {
+    display: flex;
+    padding: 40px;
+}
+
+.contact {
+    width: 350px;
+    padding-right: 78px;
+}
+
+.record {
+    width: 430px;
+}
+
+.page-footer-container {
+    display: flex;
+    margin: 0 auto;
+    width: 940px;
+    justify-content: space-between;
+
+    /*outline: 5px solid green;
+    outline-offset: -3px;*/
+}
+
+.footer-section-1 {
+    display: flex;
+    flex-direction: column;
+    width: 187px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-section-2 {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-section-3 {
+    display: flex;
+    flex-direction: column;
+    width: 184px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Catalog */
+
+.navigation-list-3 {
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    margin-right: 212px;
+}
+
+.navigation-list-4 {
+    margin: 0;
+    padding: 0;
+    width: 170px;
+}
+
+.visually-hidden-footer {
+    display: none;
+}
+
+.create {
+    padding-top: 36px;
+}
+
+.header-img {
+    width: 138px;
+    margin-right: 100px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.page-container-catalog {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+    
+
+    outline: 3px solid blue;
+    outline-offset: -3px;
+}
+
+
+
+
+/*1:15:00*/
