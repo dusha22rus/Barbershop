@@ -424,15 +424,39 @@ body {
 
 .page-container-catalog {
     display: flex;
+    flex-direction: column;
     width: 940px;
     margin: 0 auto;
     
 
-    outline: 3px solid blue;
+    
+}
+
+.catalog-products {  
+    display: flex;
+}
+
+.catalog-filters {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin-right: 20px;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+
+    outline: 3px solid green;
     outline-offset: -3px;
 }
 
+.inner-header {
+    display: flex;
 
+    flex-direction: column;
+}
 
 
 /*1:15:00*/
