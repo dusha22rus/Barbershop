@@ -18,11 +18,23 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+    display: block;    
+}
+
+.enter {
+    padding-left: 3px;
 }
 
 .visually-hidden {
-    color: aqua;
-    display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;  
+
 }
 
 .main-index {
@@ -49,6 +61,7 @@ body {
 
 .bkd-h {
     color: #FFF;
+    margin-top: 0;
 }
 
 .bkd-p {
@@ -275,20 +288,35 @@ body {
     display: flex;
     width: 940px;
     margin: 0 auto;
+    display: flex;
 }
 
 .navigation-list-1 {
     padding: 0;
     margin: 0;
     width: 430px;
+    list-style-type: none;
+    display: flex;
+    padding: 24px 0;
+    flex-wrap: wrap;
+
 }
 
 .navigation-list-2 {
-    width: 250px;
+    display: flex;
+    justify-content:end;
+    width: 300px;
     padding: 0;
     margin: 0;
     margin-left: auto;
+    padding: 24px 0;
 }
+
+.navigation-item {
+    display: flex;
+    padding: 0 20px;
+}
+
 
 .main-container {
     flex-grow: 1;
@@ -302,6 +330,14 @@ body {
 .main-logo-1 {
     margin: 0 auto;
     display: block;
+    padding-top: 64px;
+    margin-bottom: 64px;
+}
+
+.advantages {
+    margin-top: 0;
+    padding-top: 0;
+
 }
 
 .advantages-list {
@@ -404,9 +440,9 @@ body {
     width: 170px;
 }
 
-.visually-hidden-footer {
+/*.visually-hidden-footer {
     display: none;
-}
+}*/
 
 .create {
     padding-top: 36px;
@@ -426,10 +462,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 940px;
-    margin: 0 auto;
-    
-
-    
+    margin: 0 auto;      
 }
 
 .catalog-products {  
