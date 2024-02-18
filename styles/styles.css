@@ -51,6 +51,7 @@ body {
 
 .advantages-list {
     text-align: center;
+    list-style-type: none;
 }
 
 .middle-section,
@@ -79,6 +80,52 @@ body {
     line-height: 35px;
 }
 
+.popular-h,
+.foto-h {
+   margin: 0; 
+   margin-bottom: 28px;
+}
+
+.contact-h2,
+.zapis-h {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.contact-p {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.contact-h3 {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.adress-midle {
+    margin-bottom: 22px;
+    list-style-type: none;
+}
+
+.work-schedule {
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.servic-ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 8px;
+    list-style-type: none;
+}
+
+.servic-li {
+    padding-bottom: 22px;
+}
+
 .servic-span,
 .servic-price {
     font-size: 20px;
@@ -101,6 +148,8 @@ body {
     font-weight: 700;
     line-height: 16px;
     width: 130px;
+    padding: 14px 20px;
+    
 }
 
 .krug-button,
@@ -120,6 +169,11 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
+    margin-bottom: 60px;
+}
+
+.button-road {
+    margin-right: 16px;
 }
 
 .contact-h3 {
@@ -312,6 +366,11 @@ body {
     padding: 24px 0;
 }
 
+.navigation-list-2 .navigation-link {
+    min-width: 16px;
+    min-height: 22px;    
+}
+
 .navigation-item {
     display: flex;
     padding: 0 20px;
@@ -328,14 +387,13 @@ body {
 }
 
 .main-logo-1 {
-    margin: 0 auto;
-    display: block;
-    padding-top: 64px;
-    margin-bottom: 64px;
+    margin: 64px auto;
+    display: block;   
 }
 
 .advantages {
     margin-top: 0;
+    margin-bottom: 56px;
     padding-top: 0;
 
 }
@@ -353,8 +411,10 @@ body {
 
 .middle-section {
     padding: 0 40px;
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 31px;
 }
 
 .popular {
