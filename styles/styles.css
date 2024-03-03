@@ -208,6 +208,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    margin-bottom: 24px;
 }
 
 .page-footer {
@@ -216,6 +217,10 @@ body {
 }
 
 .footer-adress {
+    padding-bottom: 16px;
+}
+
+.footer-adress-p {
     color: white;
     text-decoration: none;
     font-size: 14px;
@@ -243,6 +248,22 @@ body {
     font-weight: 700;
     line-height: 28px;
     text-transform: uppercase;
+}
+
+.footer-titile {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 14px;   
+}
+
+.contact-footer {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-create {
+    margin: 0;
+    padding: 0;
 }
 
 .create {
@@ -477,12 +498,16 @@ body {
     padding-bottom: 40px;
 }
 
-.social {
+.social-list {
     margin: 0;
     padding: 0;
+    padding-bottom: 36px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    list-style-type: none;
+
 }
 
 /* Catalog */
@@ -499,10 +524,6 @@ body {
     padding: 0;
     width: 170px;
 }
-
-/*.visually-hidden-footer {
-    display: none;
-}*/
 
 .create {
     padding-top: 36px;
@@ -551,5 +572,11 @@ body {
     flex-direction: column;
 }
 
+.appointment-form {
+    margin: 0;
+    padding: 0;
+    
+}
 
-/*1:15:00*/
+
+/*54:56*/
