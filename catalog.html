@@ -17,51 +17,42 @@
           <img class="header-img" src="images/catalog-img/header-logo.png"
             alt="логотип сайта Бородинский">
         </a>
-        <ul class="navigation-list-3">
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://htmlacademy.ru/about">О
-              нас</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current"
-              href="catalog.html">Каталог</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Частые вопросы</a>
-          </li>
-        </ul>
-        <ul class="navigation-list-4">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span
-                class="visually-hidden">Поиск</span>
-              <img src="../perezagruz/images/index-img/search.svg" alt="поиск"
-                width="16" height="16">
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span
-                class="visually-hidden">Корзина</span>
-              <img src="../perezagruz/images/catalog-img/buster.svg"
-                alt="корзина" width="16" height="16">
-            </a>
-          </li>
-          <li class="navigation-item">
+            <ul class="navigation-list-1">
+                <li class="navigation-item">
+                    <a class="navigation-link" href="https://htmlacademy.ru/about">О нас</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Частые вопросы</a>
+                </li>
+                                
+            </ul>
+            <ul class="navigation-list-1 navigation-list-2">
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span><img src="images/index-img/search.svg" alt="кнопка поиска" width="16" height="16"></a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#"><span class="visually-hidden">Корзина</span><img src="images/index-img/basket.svg" alt="корзина" width="16" height="16"></a>
+                </li>
+                <li class="navigation-item">
             <a class="navigation-link" href="#"><span
                 class="visually-hidden">Личный кабинет</span>
               <img src="../perezagruz/images/catalog-img/person.svg"
                 alt="Личный кабинет" width="14" height="16">
             </a>
           </li>
-        </ul>
-      </nav>
+            </ul>
+        </nav>
     </header>
-    <main class="inner">
+    <main class="page-inner">
       <div class="page-container-catalog">
         <header class="inner-header">
           <h1 class="title-h1">Каталог</h1>
-          <ul class="hleb-ul">
-            <li><a class="hleb-a" href="index.html">Главная</a></li>
-            <li><a class="hleb2">Каталог</a></li>
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item-current"><a class="breadcrumbs-link-current" href="index.html">Главная</a></li>
+            <li class="breadcrumbs-item-other"><a>Каталог</a></li>
           </ul>
         </header>
         <div class="catalog-products">
@@ -290,60 +281,50 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer-container">
-        <section class="footer-section">
+        <section class="footer-section-1">
           <h2 class="visually-hidden">Контакты</h2>
-          <img class="footer-titile footer-img" src="images/index-img/footer-logo.png"
-            alt="Логотип Барбершопа Бородинский">
-          <address>
-            <p class="footer-adress-p contact-p"><a class="footer-adress-a"
-                href="https://yandex.ru/maps/-/CDaSVN7t">Санкт-Петербург,
-                набережная реки Карповки, 5, литера П.</a></p>
-            <a class="telephone footer-telephone"
-              href="tel:8913552365">+7-913-555-23-65</a>
+          <img class="footer-img footer-titile" src="images/index-img/footer-logo.png" alt="Логотип Барбершопа Бородинский">
+          <address class="footer-adress">
+            <p class="contact-footer"><a class="footer-adress-p" href="https://yandex.ru/maps/-/CDaSVN7t">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a></p>
+            <a class="telephone footer-telephone" href="tel:8913552365">+7-913-555-23-65</a>
           </address>
-          <p class="footer-adress-p contact-p"><a class="location footer-location"
-              href="https://yandex.ru/maps/-/CDaSVN7t">Как нас найти?</a></p>
+          <p class="contact-footer"><a class="location footer-location" href="https://yandex.ru/maps/-/CDaSVN7t">Как нас найти?</a></p>
         </section>
-        <section>
+        <section class="footer-section-2">
           <h2 class="footer-titile footer-h2">Получайте лучшие предложения</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <p class="footer-adress-p footer-p">
+            <p class="footer-p">
               <label for="email">Ваше имя</label>
-              <input type="email" placeholder="email@htmlacademy.ru"
-                id="email" name="email" required>
+              <input type="email" placeholder="email@htmlacademy.ru" id="email" name="email" required>
             </p>
             <button class="footer-button" type="submit">
               <span class="visually-hidden">Отправить</span>
             </button>
           </form>
         </section>
-        <section>
+        <section class="footer-section-3">
           <h2 class="footer-titile footer-h2">Давайте дружить</h2>
-          <ul>
+          <ul class="social-list">
             <li>
               <a href="https://twitter.com/htmlacademy_ru">
-                <img src="images/index-img/twitter.svg" alt="twitter"
-                  width="56" height="44">
-                <span class="visually-hidden">twitter</span>
+              <img src="images/index-img/twitter.svg" alt="twitter" width="56" height="44">
+              <span class="visually-hidden">twitter</span>
               </a>
             </li>
             <li>
               <a href="https://vk.com/htmlacademy">
-                <img src="images/index-img/vk.svg" alt="Вконтакте" width="56"
-                  height="44">
-                <span class="visually-hidden">vk.com</span>
+              <img src="images/index-img/vk.svg" alt="Вконтакте" width="56" height="44">
+              <span class="visually-hidden">vk.com</span>
               </a>
             </li>
             <li>
               <a href="https://www.facebook.com/htmlacademy">
-                <img src="images/index-img/inst.svg" alt="instagram"
-                  width="56" height="44">
+                <img src="images/index-img/inst.svg" alt="instagram" width="56" height="44">
                 <span class="visually-hidden">instagram</span>
               </a>
             </li>
           </ul>
-          <p class="create">Сделано в <a class="footer-link"
-              href="https://htmlacademy.ru/">.html academy</a></p>
+          <p class="footer-create">Сделано в <a class="footer-link" href="https://htmlacademy.ru/">.html academy</a></p>
         </section>
       </div>
     </footer>
