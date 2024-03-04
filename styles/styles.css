@@ -298,7 +298,12 @@ body {
     line-height: 22px;
     color: #242424;
     margin-right: 32px;
-    
+    color: black;  
+}
+
+.breadcrumbs-link-current {
+    color: #000;
+
 }
 
 .breadcrumbs-item-other {
@@ -559,8 +564,13 @@ body {
     display: flex;
     flex-direction: column;
     width: 940px;
-    margin: 0 auto;      
+    margin: 0 auto; 
 }
+
+.page-container-catalog li {
+    list-style-type: none; 
+}
+
 
 .catalog-products {  
     display: flex;
@@ -598,7 +608,48 @@ body {
 .page-container-catalog {
     padding: 40px;
     padding-bottom: 60px;
+}
+
+.filters {
+    display: flex;
+}
+
+.top-right-filters {
+    display: flex;
+    background-color: #FFF;
+    width: 700px;
+    height: 76px;   
+}
+
+.top-right-filters-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
 }
 
-/* строка 310 обесцвечиваю ссылку, 01:10:38, 7*/
+.trf-one {
+    margin-left: 16px;
+    margin-right: 296px;
+}
+
+.trf-two {
+    width: 56px;
+    height: 44px;
+
+}
+
+.top-filter-form {
+    width: 260px;
+    height: 44px;
+}
+
+.top-link-two {
+    width: 56px;
+    height: 44px;    
+}
+
+
+/* trf-two делаю кнопку посредине чтоб кликалась по площади. 01:12:29/
