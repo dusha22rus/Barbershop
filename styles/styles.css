@@ -364,6 +364,11 @@ body {
     line-height: 52px;
 }
 
+.button-market-first {
+    line-height: 52px;
+    background-color: #595959;
+}
+
 .button-market-activ {
     color: black;
     background-color: white;
@@ -687,19 +692,20 @@ body {
     background-color: black;
     width: 130px;
     height: 50px;
+    margin-left: auto;
 }
 
 .stranitsi-li {
     margin-right: 8px;
 }
 
-.last-item {
-    margin-right: 200px;
-}
-
 .product-list {
     display: flex;
     flex-wrap: wrap;
+}
+
+.first-item {
+    color: bisque ;
 }
 
 /*.product-list . 01:29:58/
