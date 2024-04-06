@@ -139,40 +139,40 @@
         <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="appointment-form appointment-form-date">
             <span class="form-label form-label-icon">
-              <label for="appointment-date">
+              <label for="appointment-date appointment-date-mg">
                 Дата</label>
-              <button class="info" type="button">
+              <button class="appointment-info" type="button">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span> 
                 <img alt="дополнительная информация" src="images/index-img/attantion.svg" height="16" width="16"></button>
             </span>
-            <input type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
+            <input type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020" class="appointment-input appointment-input-date">
           </p>
           <p class="appointment-form appointment-form-time">
             <span class="form-label form-label-icon">
               <label for="appointment-time">
                 Время
               </label>
-              <button class="info" type="button">
+              <button class="appointment-info" type="button">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 <img alt="дополнительная информация" src="images/index-img/attantion.svg" height="16" width="16"></button>
               </button>
             </span>
-            <input type="text" id="appointment-time" name="appointment-time" placeholder="10:00">
+            <input type="text" id="appointment-time" name="appointment-time" placeholder="10:00" class="appointment-input appointment-input-time">
           </p>
           <p class="appointment-form appointment-form-phone">
             <label for="appointment-phone">
               Телефон
             </label>
-            <input type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00">
+            <input type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00" class="appointment-input appointment-input-phone">
           </p>
           <p class="appointment-form appointment-form-name">
-            <label for="appointment-name">
+            <label for="appointment-name" class="appointment-name">
               Ваше имя
             </label>
-            <input type="text" id="appointment-name" name="appointment-name" >
+            <input type="text" id="appointment-name" name="appointment-name" class="appointment-input appointment-input-name">
           </p>
 
-          <button class="button" type="submit">Записаться</button>
+          <button class="button appointment-button" type="submit">Записаться</button>
         </form>            
       </section>
     </div>
