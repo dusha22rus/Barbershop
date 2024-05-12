@@ -81,6 +81,10 @@ body {
     line-height: 35px;
 }
 
+.popular-h {
+
+}
+
 .popular-h,
 .foto-h {
    margin: 0; 
@@ -119,12 +123,12 @@ body {
 .servic-ul {
     margin: 0;
     padding: 0;
-    padding-bottom: 8px;
+    margin-bottom: 30px;    
     list-style-type: none;
 }
 
 .servic-li {
-    padding-bottom: 22px;
+    margin-bottom: 22px;
 }
 
 .servic-span,
@@ -141,6 +145,7 @@ body {
 }
 
 .button {
+    display: inline-block;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -149,7 +154,14 @@ body {
     font-weight: 700;
     line-height: 16px;
     width: 130px;
-    padding: 14px 20px;    
+    padding: 14px 20px; 
+    border: none;  
+    cursor: pointer; 
+}
+
+.button-connect {
+    background: white;
+    color: #000;
 }
 
 .button-product {
@@ -183,9 +195,7 @@ body {
     margin-bottom: 60px;
 }
 
-.button-road {
-    margin-right: 16px;
-}
+
 
 .contact-h3 {
     color: #AF7842;
