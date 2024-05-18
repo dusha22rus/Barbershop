@@ -77,9 +77,9 @@
         <div class="catalog-products">
           <section class="filters">
             <h2 class="visually-hidden" hidden>Список фильтров</h2>
-            <form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset>
-                <legend class="zagolovok">Цена</legend>
+            <form class="catalog-filters-form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog-filter catalog-filter-price">
+                <legend class="legend-name">Цена</legend>
                 <button type="button">
                   <span class="visually-hidden">изменить минимальную цену</span>
                 </button>
@@ -89,8 +89,8 @@
                 </button>
                 <label>до<input type="number" />₽</label>
               </fieldset>
-              <fieldset>
-                <legend class="zagolovok">Производители</legend>
+              <fieldset class="catalog-filter catalog-filter-producer">
+                <legend class="legend-name">Производители</legend>
                 <ul>
                   <li class="filters-content">
                     <label>
@@ -136,8 +136,8 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
-                <legend class="zagolovok">Группы товаров</legend>
+              <fieldset class="catalog-filter catalog-filter-product_group">
+                <legend class="legend-name">Группы товаров</legend>
                 <ul>
                   <li>
                     <label>
@@ -201,7 +201,7 @@
                     <img
                       class="prodict-iamge"
                       alt="Шампунь для мужчин Brews Daily"
-                      src="../perezagruz/images/catalog-img/product-1.jpg"
+                      src="./images/catalog-img/product-1.jpg"
                       width="180"
                       height="168"
                     />
@@ -216,7 +216,7 @@
                     <img
                       class="prodict-iamge"
                       alt="Syoss шампунь Men Power & Strength"
-                      src="../perezagruz/images/catalog-img/product-2.jpg"
+                      src="./images/catalog-img/product-2.jpg"
                       width="180"
                       height="168"
                     />
@@ -231,7 +231,7 @@
                     <img
                       class="prodict-iamge"
                       alt="Schauma шампунь для мужчин «Сила и объём с хмелем»"
-                      src="../perezagruz/images/catalog-img/product-3.jpg"
+                      src="./images/catalog-img/product-3.jpg"
                       width="180"
                       height="168"
                     />
@@ -246,7 +246,7 @@
                     <img
                       class="prodict-iamge"
                       alt="Nivea Men шампунь-уход  «Экстремальная свежесть с ментолом»"
-                      src="../perezagruz/images/catalog-img/product-4.jpg"
+                      src="./images/catalog-img/product-4.jpg"
                       width="180"
                       height="168"
                     />
@@ -261,7 +261,7 @@
                     <img
                       class="prodict-iamge"
                       alt="Шампунь Amplifier Thickening"
-                      src="../perezagruz/images/catalog-img/product-5.jpg"
+                      src="./images/catalog-img/product-5.jpg"
                       width="180"
                       height="168"
                     />
@@ -276,7 +276,7 @@
                     <img
                       class="prodict-iamge"
                       alt="American Crew шампунь Anti-Dandruff"
-                      src="../perezagruz/images/catalog-img/product-6.jpg"
+                      src="./images/catalog-img/product-6.jpg"
                       width="180"
                       height="168"
                     />
@@ -288,32 +288,32 @@
               </ul>
             </div>
 
-            <section>
+            <section class="content-page">
               <div class="paginatiom-container">
                 <ul class="pagination">
-                  <li class="stranitsi-li first-item" href="#">
-                    <a class="button button-market-first" href="#">
+                  <li class="page-item" href="#">
+                    <a class="button-market first-item" href="#">
                       <span class="visually-hidden">следующая страница</span>
                     </a>
                   </li>
 
-                  <li class="stranitsi-li">
-                    <a class="button button-market-activ" href="#">1</a>
+                  <li class="page-item">
+                    <a class="button-market button-market-activ" href="#">1</a>
                   </li>
-                  <li class="stranitsi-li">
-                    <a class="button button-market" href="#">2</a>
+                  <li class="page-item">
+                    <a class="button-market" href="#">2</a>
                   </li>
-                  <li class="stranitsi-li">
-                    <a class="button button-market" href="#">3</a>
+                  <li class="page-item">
+                    <a class="button-market" href="#">3</a>
                   </li>
-                  <li class="stranitsi-li">
-                    <a class="button button-market" href="#">4</a>
+                  <li class="page-item">
+                    <a class="button-market" href="#">4</a>
                   </li>
-                  <li class="stranitsi-li">
-                    <a class="button button-market" href="#">5</a>
+                  <li class="page-item">
+                    <a class="button-market" href="#">5</a>
                   </li>
-                  <li class="stranitsi-li last-item" href="#">
-                    <a class="button button-market" href="#">
+                  <li class="page-item" href="#">
+                    <a class="button-market last-item" href="#">
                       <span class="visually-hidden">следующая страница</span>
                     </a>
                   </li>
@@ -346,18 +346,28 @@
             <a class="location footer-location" href="https://yandex.ru/maps/-/CDaSVN7t">Как нас найти?</a>
           </p>
         </section>
+
         <section class="footer-section-2">
           <h2 class="footer-titile footer-h2">Получайте лучшие предложения</h2>
+
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <p class="footer-p">
-              <label for="email">Ваше имя</label>
-              <input type="email" placeholder="email@htmlacademy.ru" id="email" name="email" required />
-            </p>
-            <button class="footer-button" type="submit">
-              <span class="visually-hidden">Отправить</span>
-            </button>
+            <div class="footer-p">
+              <input
+                type="email"
+                placeholder="email@htmlacademy.ru"
+                id="email"
+                name="email"
+                required
+                class="e-mail_footer"
+              />
+              <label class="visually-hidden" for="email">Ваше имя</label>
+              <button class="footer-button" type="submit">
+                <span class="visually-hidden">Отправить</span>
+              </button>
+            </div>
           </form>
         </section>
+
         <section class="footer-section-3">
           <h2 class="footer-titile footer-h2">Давайте дружить</h2>
           <ul class="social-list">
