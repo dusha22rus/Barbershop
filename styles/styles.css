@@ -62,7 +62,24 @@ body {
 
 .bkd-h {
   color: #fff;
-  margin-top: 0;
+}
+
+.decorative-romb {
+  position: relative;
+  width: 277px;
+  height: 56px;
+}
+
+.decorative-romb::after {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  top: 50%;
+  transform: rotate(45deg);
 }
 
 .bkd-p {
@@ -119,10 +136,33 @@ body {
   padding: 0;
   margin-bottom: 30px;
   list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .servic-li {
   margin-bottom: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.servic-li::after {
+  order: 2;
+  content: "";
+  border-bottom: 2px dotted #595959;
+  flex-grow: 1;
+}
+
+.servic-span {
+  padding-right: 10px;
+}
+
+.servic-price {
+  order: 3;
+  padding-left: 10px;
 }
 
 .servic-price,
@@ -151,6 +191,12 @@ body {
   padding: 14px 20px;
   border: none;
   cursor: pointer;
+}
+
+.button-service {
+  padding: 14px 44px 14px 20px;
+  background: #000 url("../images/catalog-img/right-arrow.svg") no-repeat;
+  background-position: center right 20px;
 }
 
 .button-connect {
@@ -434,9 +480,8 @@ body {
 }
 
 .navigation-item:hover {
-    background-color: #595959;
+  background-color: #595959;
 }
-
 
 .top-right-filters-item {
   margin: 0;
@@ -466,6 +511,10 @@ body {
   margin-top: 0;
   margin-bottom: 56px;
   padding-top: 0;
+}
+
+.advantages-list-title {
+  margin-bottom: 0;
 }
 
 .advantages-list {
@@ -590,9 +639,6 @@ body {
   justify-content: center;
   text-align: center;
 }
-
-
-
 
 .right-container {
   display: flex;
@@ -729,12 +775,6 @@ body {
   height: 44px;
 }
 
-.top-link-two {
-  margin: 0;
-  padding: 14px 20px;
-  border-color: #fff;
-}
-
 .appointment-name {
   margin-top: 14px;
   margin-bottom: 8px;
@@ -827,6 +867,11 @@ input[type="text"]::placeholder {
   margin-bottom: 40px;
 }
 
+.top-link-two {
+  margin: 0;
+  padding: 14px 20px;
+}
+
 /*переключение страниц*/
 
 .content-page {
@@ -857,6 +902,10 @@ input[type="text"]::placeholder {
   background-color: #000;
 }
 
+.button-market:hover {
+  background-color: #595959;
+}
+
 .first-item {
   background: #595959 url("../images/catalog-img/left-arrow.svg") no-repeat center center;
 }
@@ -871,6 +920,10 @@ input[type="text"]::placeholder {
   padding: 14px 20px;
   line-height: 52px;
   border: 1px solid #000;
+}
+
+.button-market-activ:hover {
+  background-color: #fff;
 }
 
 .paginatiom-container {
@@ -912,6 +965,5 @@ input[type="text"]::placeholder {
   margin-bottom: 24px;
 }
 
-
 /* https://up.htmlacademy.ru/profession/frontender-lite/2/lite-htmlcss/2/module/7/item/9 */
-/*55:14*/
+/*01:36:14*/
