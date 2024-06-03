@@ -22,8 +22,6 @@ body {
   padding: 24px 20px;
 }
 
-
-
 .enter {
   padding-left: 3px;
 }
@@ -192,12 +190,12 @@ body {
   width: 130px;
   padding: 14px 20px;
   border: none;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .button:hover {
-  background-color: #814B18;
-} 
+  background-color: #814b18;
+}
 
 .button-connect:hover {
   color: white;
@@ -256,9 +254,8 @@ body {
   column-gap: 8px;
   position: relative;
   top: 50%;
-  justify-content: center; 
-  
-  
+  justify-content: center;
+
   margin: 0;
   padding: 0;
 
@@ -405,7 +402,7 @@ body {
 /*Photo-Gallery*/
 
 .foto-slider {
-  position:absolute;
+  position: absolute;
   margin-bottom: 16px;
 }
 
@@ -416,24 +413,21 @@ body {
   color: #ffffff;
   position: absolute;
   top: 95px;
-
-
 }
 
 .button-previous {
   background-image: url("../images/catalog-img/left-arrow.svg");
   background-repeat: no-repeat;
-  background-position: center center; 
-  position: relative; 
+  background-position: center center;
+  position: relative;
 }
 
 .button-next {
   background-image: url("../images/catalog-img/right-arrow.svg");
   background-repeat: no-repeat;
-  background-position: center center; 
-  position: relative; 
+  background-position: center center;
+  position: relative;
   left: 74%;
-  
 }
 
 /*Catalog*/
@@ -464,8 +458,6 @@ body {
 .breadcrumbs-link-current {
   color: #000;
 }
-
-
 
 .breadcrumbs-item-other {
   font-weight: 400;
@@ -558,7 +550,7 @@ body {
 }
 
 .navigation-item {
-  display: flex;  
+  display: flex;
 }
 
 .navigation-item:hover {
@@ -625,7 +617,7 @@ body {
 }
 
 .photo-gallery {
-  width: 390px;  
+  width: 390px;
 }
 
 .registration {
@@ -689,7 +681,6 @@ body {
 
 .social-item:hover {
   background-color: rgb(223, 214, 214);
-
 }
 
 /* Catalog */
@@ -778,7 +769,6 @@ body {
   font-weight: 600;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
-
 }
 
 input {
@@ -990,7 +980,7 @@ input[type="text"]::placeholder {
   left: 15%;
   height: 4px;
   bottom: 60px;
-  bottom: 2px;   
+  bottom: 2px;
 }
 
 .breadcrumbs-item-other {
@@ -1006,7 +996,6 @@ input[type="text"]::placeholder {
   bottom: 25%;
   left: -20px;
   transform: rotate(50deg);
-
 }
 
 /*переключение страниц*/
@@ -1102,8 +1091,142 @@ input[type="text"]::placeholder {
   margin-bottom: 24px;
 }
 
+.legend-name {
+  margin-bottom: 22px;
+}
 
+.range-scale {
+  height: 4px;
+  margin-bottom: 45px;
+  background-color: #242424;
+  border-radius: 2px;
+  position: relative;
+}
+
+.range-scale-inside {
+  height: 4px;
+  background-color: #af7842;
+  border-radius: 2px;
+  position: relative;
+  left: 10%;
+  width: 150px;
+}
+
+.toggle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ffffff;
+  border: 2px solid #242424;
+}
+
+.toggle:hover {
+  background-color: #dbb590;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  left: 140px;
+}
+
+.range-input-label {
+  margin-top: 10px;
+}
+
+.catalog-filter-producer {
+  margin-top: 40px;
+}
+
+/*Price-slider*/
+
+.price-slider_input {
+  border: none;
+  border-color: #fbf7f6;
+}
+
+.price-slider-input_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price-slider_input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #242424;
+  padding: 0;
+  background: url("../images/index-img/pattern.png");
+}
+
+.price-slider_text {
+  padding: 0 3px;
+}
+
+.price-slider_label {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.catalog-filter-price {
+  position: relative;
+}
+
+.price-slider {
+  border-radius: 2px;
+  width: 220px;
+  height: 4px;
+  background-color: #242424;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.price-slider-inside {
+  border-radius: 2px;
+  width: 180px;
+  height: 4px;
+  background-color: #af7842;
+  position: absolute;
+  left: 10%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-slider {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #242424;
+  top: -8px;
+}
+
+.right-slider {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #242424;
+}
 
 /* Раздел 8.8*/
 /*https://up.htmlacademy.ru/profession/frontender-lite/2/lite-htmlcss/2/module/8/item/8*/
-/*21:47*/
+/*01:19:10*/
