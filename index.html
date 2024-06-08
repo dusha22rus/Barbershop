@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Barbrshop Главная</title>
@@ -27,22 +28,56 @@
       <ul class="navigation-list-1 navigation-list-2">
         <li class="navigation-item">
           <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span>
-            <img class="navigation-icon"
-              src="images/index-img/search.svg" alt="кнопка поиска" width="16" height="16">
-            </a>
+            <img class="navigation-icon" src="images/index-img/search.svg" alt="кнопка поиска" width="16" height="16">
+          </a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#"><span class="visually-hidden">Корзина</span>
-            <img class="navigation-icon"
-              src="images/index-img/basket.svg" alt="корзина" width="16" height="16"></a>
+        <li class="navigation-item navigation-popover">          
+          <a class="navigation-link" href="#" >
+            <span class="visually-hidden">Корзина</span>
+            <img class="navigation-icon" src="images/index-img/basket.svg" alt="корзина" width="16" height="16">
+          </a>
         </li>
+        <div class="popover popover-cart" >
+          <button class="popover-button-close">
+            <div class="popover-button-close-convert">
+            <img src="./images/index-img/popover-box.svg" alt="изображение корзины с количеством товаров" width="16px"
+              height="16px">
+            <span class="popover-text">2</span>
+            <span class="visually-hidden">Закрыть</span>
+            </div>
+          </button>
+          <div class="popover-content">
+            <h2 class="popover-title">Корзина</h2>
+            <div class="popover-list">
+              <div class="popover-item">
+                <div class="popover-item_subitem">
+                  <p class="popover-item_text">Стрижка машинкой</p>
+                  <button class="popover-item_button"></button>
+                </div>
+                <p class="popover-item_price">800 ₽</p>
+              </div>
+
+              <div class="popover-item">
+                <div class="popover-item_subitem">
+                  <p class="popover-item_text">Стрижка усов</p>
+                  <button class="popover-item_button"></button>
+                </div>
+                <p class="popover-item_price">1200 ₽</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <li class="navigation-item navigation-item-enter">
           <a class="navigation-link enter-icon" href="#">
-            <img class="navigation-icon" src="images/index-img/entry.svg" alt="кнопка поиска"
-              width="16" height="16">
+            <img class="navigation-icon" src="images/index-img/entry.svg" alt="кнопка поиска" width="16" height="16">
             <b class="enter">Вход</b></a>
         </li>
       </ul>
+
+
+
+
+
     </nav>
   </header>
   <main class="main-container main-index">
@@ -114,7 +149,7 @@
           <button class="button button-slider button-next" type="button">
             <span class="visually-hidden">следующее фото</span>
           </button>
-         
+
           <ol class="krug-ol">
             <li class="krug-li">
               <button class="krug-button button-one" type="button">
@@ -140,8 +175,8 @@
               <button class="krug-button" type="button">
                 <span class="visually-hidden">Четвертое фото</span>
               </button>
-            </li>           
-          </ol>          
+            </li>
+          </ol>
         </section>
       </div>
       <div class="registration">
@@ -178,8 +213,8 @@
                   <img alt="дополнительная информация" src="images/index-img/attantion.svg" height="16"
                     width="16"></button>
               </span>
-              <input type="text" id="appointment-date appointment-date-mg" name="appointment-date" placeholder="01.01.2020"
-                class="appointment-input appointment-input-date">
+              <input type="text" id="appointment-date appointment-date-mg" name="appointment-date"
+                placeholder="01.01.2020" class="appointment-input appointment-input-date">
             </p>
             <p class="appointment-form appointment-form-time">
               <span class="form-label form-label-icon">
@@ -209,7 +244,7 @@
               <input type="text" id="appointment-name" name="appointment-name"
                 class="appointment-input appointment-input-name" placeholder="Андрей">
             </p>
-            <button class="button appointment-button" type="submit">Записаться</button> 
+            <button class="button appointment-button" type="submit">Записаться</button>
           </form>
         </section>
       </div>
@@ -271,4 +306,5 @@
     </div>
   </footer>
 </body>
+
 </html>
