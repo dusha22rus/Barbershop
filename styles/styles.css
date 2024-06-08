@@ -843,7 +843,8 @@ input {
   height: 44px;
 }
 
-.top-filter-form-select {
+.top-filter-form-select,
+option {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
@@ -948,6 +949,7 @@ input[type="text"]::placeholder {
 .catalog-filters-form {
   display: flex;
   flex-direction: column;
+  row-gap: 40px;
   width: 220px;
   margin-right: 20px;
 }
@@ -960,7 +962,9 @@ input[type="text"]::placeholder {
 }
 
 .catalog-filter {
-  margin-bottom: 40px;
+  margin: 0px;
+  padding: 0;
+  border: none;
 }
 
 .top-link-two {
@@ -1140,22 +1144,19 @@ input[type="text"]::placeholder {
   margin-top: 10px;
 }
 
-.catalog-filter-producer {
-  margin-top: 40px;
-}
-
 /*Price-slider*/
 
 .price-slider_input {
   border: none;
   border-color: #fbf7f6;
+  font: inherit;
 }
 
 .price-slider-input_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .price-slider_input {
@@ -1165,7 +1166,13 @@ input[type="text"]::placeholder {
   text-align: center;
   color: #242424;
   padding: 0;
-  background: url("../images/index-img/pattern.png");
+  background-color: transparent;
+}
+
+.price-slider_input::-webkit-outer-spin-button,
+.price-slider_input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .price-slider_text {
@@ -1174,7 +1181,7 @@ input[type="text"]::placeholder {
 
 .price-slider_label {
   display: flex;
-  margin-bottom: 8px;
+  justify-content: center;
 }
 
 .catalog-filter-price {
@@ -1210,6 +1217,10 @@ input[type="text"]::placeholder {
   justify-content: space-between;
 }
 
+.slider {
+  position: absolute;
+}
+
 .left-slider {
   width: 20px;
   height: 20px;
@@ -1217,6 +1228,7 @@ input[type="text"]::placeholder {
   background-color: #ffffff;
   border: 2px solid #242424;
   top: -8px;
+  left: 10%;
 }
 
 .right-slider {
@@ -1225,8 +1237,212 @@ input[type="text"]::placeholder {
   border-radius: 50%;
   background-color: #ffffff;
   border: 2px solid #242424;
+  bottom: 23px;
+  right: 15px;
 }
+
+.slider:hover {
+  background-color: #dbb590;
+  cursor: pointer;
+}
+
+.slider:active {
+  background-color: #dbb590;
+  outline: 2px solid #af7842;
+}
+
+/*Produser-filter*/
+
+.producer-list {
+  margin: 0;
+  padding: 0;
+}
+
+.control {
+  padding-left: 30px;
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.control-mark:hover {
+  border-color: #814b18;
+}
+
+.control-mark {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  left: 2px;
+}
+
+.standart-input {
+  display: none;
+}
+
+.standart-input[type="checkbox"]:checked + .control-mark::before,
+.standart-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  width: 12px;
+  height: 2px;
+  background-color: #242424;
+  content: "";
+}
+
+.standart-input[type="checkbox"]:checked + .control-mark::before {
+  transform: rotate(45deg);
+}
+
+.standart-input[type="checkbox"]:checked + .control-mark::after {
+  transform: rotate(-45deg);
+}
+
+.standart-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.standart-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
+}
+
+/*Popover*/
+
+.navigation-popover {
+  position: relative;
+  z-index: 1;
+
+
+}
+
+.popover {
+  width: 420px;
+  height: auto;
+  background-color: #fff;
+  color: #000;
+  padding: 40px;
+
+  position: absolute;
+  right: 26%;
+
+  box-shadow: 0 18px 40px 0 rgba(79, 70, 60, 0.16);
+
+  z-index: 1;  
+  display: none;
+}
+
+.popover-open {
+  display: block;
+}
+
+.popover-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.popover-list {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+}
+.popover-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.popover-item_subitem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.popover-item_text {
+  padding: 0;
+  margin: 0;
+}
+.popover-item_price {
+  font-size: 20px;
+  line-height: 140%;
+  color: #af7842;
+  padding: 0;
+  margin: -15px 0 0 0;
+}
+.popover-item_button {
+  width: 56px;
+  height: 44px;
+  background-color: #000000;
+  color: #ffffff;
+  
+
+  background-image: url("../images/index-img/box.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.popover-item_button:hover {
+  background-color: #814b18;
+  cursor: pointer;
+}
+
+.popover-button-close {
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  color: #000;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  margin: 24px 20px;
+
+
+  display: flex;
+  padding: 3px 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 8px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+
+  border: 0;
+
+  cursor: pointer;
+}
+
+
+
+
 
 /* Раздел 8.8*/
 /*https://up.htmlacademy.ru/profession/frontender-lite/2/lite-htmlcss/2/module/8/item/8*/
-/*01:19:10*/
+/*01:45:27*/
