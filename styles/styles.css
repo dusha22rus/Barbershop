@@ -136,7 +136,6 @@ body {
   padding: 0;
   margin-bottom: 30px;
   list-style-type: none;
-
   display: flex;
   flex-direction: column;
 }
@@ -198,7 +197,7 @@ body {
 }
 
 .button-connect:hover {
-  color: white;
+  color: #fff;
 }
 
 .button-service {
@@ -255,10 +254,8 @@ body {
   position: relative;
   top: 50%;
   justify-content: center;
-
   margin: 0;
   padding: 0;
-
   max-width: 390px;
 }
 
@@ -409,8 +406,8 @@ body {
 .button-slider {
   width: 48px;
   height: 60px;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #000;
+  color: #fff;
   position: absolute;
   top: 95px;
 }
@@ -472,10 +469,6 @@ body {
   margin: 0;
   padding-bottom: 16px;
 }
-
-/*.filters-content {
-    
-}*/
 
 .view-2 {
   background-color: #242424;
@@ -638,7 +631,8 @@ body {
   display: flex;
   margin: 0 auto;
   width: 940px;
-  justify-content: space-between; /*outline: 5px solid green;
+  justify-content: space-between;
+  /*outline: 5px solid green;
     outline-offset: -3px;*/
 }
 
@@ -721,7 +715,8 @@ body {
 .right-container {
   display: flex;
   flex-direction: column;
-  width: 700px; /*outline: 3px solid green;
+  width: 700px;
+  /*outline: 3px solid green;
     outline-offset: -3px;*/
 }
 
@@ -763,7 +758,6 @@ body {
   border: 0;
   padding: 0;
   margin: 0;
-
   text-transform: uppercase;
   line-height: 20px;
   font-weight: 600;
@@ -890,7 +884,8 @@ option {
 }
 
 input[type="text"]::placeholder {
-  text-align: center; /* Плейсхолдер теперь центрирован */
+  text-align: center;
+  /* Плейсхолдер теперь центрирован */
 }
 
 .product-item {
@@ -962,7 +957,7 @@ input[type="text"]::placeholder {
 }
 
 .catalog-filter {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   border: none;
 }
@@ -1121,7 +1116,7 @@ input[type="text"]::placeholder {
   height: 20px;
   border-radius: 50%;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 2px solid #242424;
 }
 
@@ -1169,8 +1164,8 @@ input[type="text"]::placeholder {
   background-color: transparent;
 }
 
-.price-slider_input::-webkit-outer-spin-button,
-.price-slider_input::-webkit-inner-spin-button {
+.price-slider_input::-webkit-inner-spin-button,
+.price-slider_input::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
@@ -1225,7 +1220,7 @@ input[type="text"]::placeholder {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 2px solid #242424;
   top: -8px;
   left: 10%;
@@ -1235,7 +1230,7 @@ input[type="text"]::placeholder {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 2px solid #242424;
   bottom: 23px;
   right: 15px;
@@ -1273,7 +1268,7 @@ input[type="text"]::placeholder {
   position: absolute;
   width: 16px;
   height: 16px;
-  border: 2px solid black;
+  border: 2px solid #000;
   left: 2px;
 }
 
@@ -1281,8 +1276,8 @@ input[type="text"]::placeholder {
   display: none;
 }
 
-.standart-input[type="checkbox"]:checked + .control-mark::before,
-.standart-input[type="checkbox"]:checked + .control-mark::after {
+.standart-input[type="checkbox"]:checked + .control-mark::after,
+.standart-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   top: 7px;
   left: 2px;
@@ -1320,8 +1315,6 @@ input[type="text"]::placeholder {
 .navigation-popover {
   position: relative;
   z-index: 1;
-
-
 }
 
 .popover {
@@ -1330,18 +1323,18 @@ input[type="text"]::placeholder {
   background-color: #fff;
   color: #000;
   padding: 40px;
-
   position: absolute;
   right: 26%;
-
   box-shadow: 0 18px 40px 0 rgba(79, 70, 60, 0.16);
-
-  z-index: 1;  
-  display: none;
+  z-index: 1;
 }
 
 .popover-open {
   display: block;
+}
+
+.popover-close {
+  display: none;
 }
 
 .popover-title {
@@ -1356,11 +1349,11 @@ input[type="text"]::placeholder {
 .popover-list {
   padding: 0;
   margin: 0;
-
   display: flex;
   flex-direction: column;
   row-gap: 45px;
 }
+
 .popover-item {
   font-weight: 700;
   font-size: 20px;
@@ -1380,6 +1373,7 @@ input[type="text"]::placeholder {
   padding: 0;
   margin: 0;
 }
+
 .popover-item_price {
   font-size: 20px;
   line-height: 140%;
@@ -1387,18 +1381,16 @@ input[type="text"]::placeholder {
   padding: 0;
   margin: -15px 0 0 0;
 }
+
 .popover-item_button {
   width: 56px;
   height: 44px;
-  background-color: #000000;
-  color: #ffffff;
-  
-
+  background-color: #000;
+  color: #fff;
   background-image: url("../images/index-img/box.svg");
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: center center;
-
   padding: 0;
   margin: 0;
   border: 0;
@@ -1414,35 +1406,160 @@ input[type="text"]::placeholder {
   height: auto;
   background-color: #fff;
   color: #000;
-
   position: absolute;
   right: 0;
   top: 0;
-
   margin: 24px 20px;
-
-
   display: flex;
   padding: 3px 0;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   column-gap: 8px;
-
   font-size: 16px;
   font-weight: 700;
   line-height: 140%;
   text-transform: uppercase;
-
   border: 0;
-
   cursor: pointer;
 }
 
+/*Modal-window*/
 
+.modal-window {
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 18px 40px 0 rgba(79, 70, 60, 0.16);
+}
 
+.modal-window-on {
+  position: fixed;
+}
 
+.modal-window-off {
+  display: none;
+}
+
+.modal-window_button-close {
+  position: fixed;
+}
+
+.modal-window-container {
+  position: relative;
+  margin: auto;
+  background-color: #fff;
+  color: #000;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.modal-window_title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.modal-window_form-one {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.modal-window_form_input-one {
+  width: 360px;
+  height: 44px;
+  border: 2px solid #242424;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242424;
+
+  padding: 0 16px;
+  text-align: left;
+  text-transform: none;
+}
+
+.modal-window_form_input-one::placeholder {
+  text-align: center;
+  color: #bdbdbd;
+  text-transform: uppercase;
+}
+
+.modal-window_form-container-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+.modal-window_form-container-two_subcontainer_one {
+}
+.modal-window_form-label-two {
+}
+.modal-window_form-label-two-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242424;
+  font-family: "PT Sans";
+}
+
+.modal-window_form_input-two {
+}
+.modal-window_form-container-two_subcontainer_two a {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #242424;
+}
+.modal-window_form-container-three {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.modal-button {
+  border: 0;
+  width: 360px;
+  height: 44px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+}
+
+.modal-button:hover {
+  background-color: #814b18;
+}
+
+.modal-button-one {
+  margin-bottom: 16px;
+  color: #fff;
+  background-color: #242424;
+}
+.modal-button-one-text {
+}
+.modal-button-two {
+  color: #242424;
+  background-color: #fff;
+  border: 1px solid #242424;
+}
+
+.modal-button-two:hover {
+  color: #fff;
+}
+.modal-button-two-text {
+}
 
 /* Раздел 8.8*/
-/*https://up.htmlacademy.ru/profession/frontender-lite/2/lite-htmlcss/2/module/8/item/8*/
-/*01:45:27*/
+/*modal-window_button-close*/
+/*02:11:30*/
