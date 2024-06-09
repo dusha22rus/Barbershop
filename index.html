@@ -31,19 +31,19 @@
             <img class="navigation-icon" src="images/index-img/search.svg" alt="кнопка поиска" width="16" height="16">
           </a>
         </li>
-        <li class="navigation-item navigation-popover">          
-          <a class="navigation-link" href="#" >
+        <li class="navigation-item navigation-popover">
+          <a class="navigation-link" href="#">
             <span class="visually-hidden">Корзина</span>
             <img class="navigation-icon" src="images/index-img/basket.svg" alt="корзина" width="16" height="16">
           </a>
         </li>
-        <div class="popover popover-cart" >
+        <div class="popover popover-cart popover-close popover-open">
           <button class="popover-button-close">
             <div class="popover-button-close-convert">
-            <img src="./images/index-img/popover-box.svg" alt="изображение корзины с количеством товаров" width="16px"
-              height="16px">
-            <span class="popover-text">2</span>
-            <span class="visually-hidden">Закрыть</span>
+              <img src="./images/index-img/popover-box.svg" alt="изображение корзины с количеством товаров" width="16px"
+                height="16px">
+              <span class="popover-text">2</span>
+              <span class="visually-hidden">Закрыть</span>
             </div>
           </button>
           <div class="popover-content">
@@ -305,6 +305,50 @@
       </section>
     </div>
   </footer>
-</body>
 
+  <div class="modal-window modal-window-on modal-window-off">
+    <button class="modal-window_button-close">
+      <img src="./images/catalog-img/button-close.svg" alt="кнопка закрытия окна реистрации" width="13px" height="13px">
+    </button>
+    <div class="modal-window-container">
+      <div class="modal-window_title">Личный кабинет</div>
+
+      <div class="modal-window_form-container-one">
+        <form action="https://echo.htmlacademy.ru/" method="post" class="modal-window_form-one" id="modal-form">
+          <label class="modal-window_form-label-one">
+            <span class="visually-hidden">Логин</span>
+            <input class="modal-window_form_input-one modal-window_form_input-one-login" type="text" placeholder="Логин">
+          </label>
+          <label class="modal-window_form-label-one">
+            <span class="visually-hidden">Пароль</span>
+            <input class="modal-window_form_input-one" type="password" placeholder="Пароль">
+          </label>
+        </form>
+      </div>
+
+      <div class="modal-window_form-container-two">
+        <div class="modal-window_form-container-two_subcontainer_one">
+          <label class="modal-window_form-label-two">
+            <span class="modal-window_form-label-two-text control-mark-window">Запомнить меня</span>
+            <input class="modal-window_form_input-two" type="checkbox" checked>
+          </label>
+        </div>
+        <div class="modal-window_form-container-two_subcontainer_two">
+          <a href="#">Забыл пароль</a>
+        </div>
+      </div>
+
+      <div class="modal-window_form-container-three">
+
+        <button class="modal-button modal-button-one" form="modal-form">
+          <span class="modal-button-one-text">войти</span>
+        </button>
+
+        <button class="modal-button modal-button-two" form="modal-form">
+          <span class="modal-button-two-text">Регистрация</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
